@@ -1,6 +1,6 @@
-# Headline
+# README
 
-> An awesome project.
+> 本博客记录了我实习、秋招的准备工作。
 >
-> sdfds
+> 后面会继续完善。
 
