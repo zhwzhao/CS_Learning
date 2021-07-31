@@ -6,5 +6,5 @@
 
 C++，计算机网络，操作系统，数据库、算法等
 
-[GitHub](https://github.com/zhwzhao/zhwzhao.github.io)
+[GitHub](https://github.com/zhwzhao/cs_blog.git)
 [Get Started](#README)
