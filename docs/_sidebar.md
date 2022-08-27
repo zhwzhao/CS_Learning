@@ -4,4 +4,6 @@
 * [数据库](/cs_note/mysql.md)
 * [数据结构与算法](/cs_note/算法.md)
 * [HTTP](/cs_note/http.md)
-* [awk使用](/cs_note/awk使用.md)
+* 工具
+  * [awk教程](/cs_note/awk使用.md)
+  * [Git教程](/cs_note/Git教程.md)
