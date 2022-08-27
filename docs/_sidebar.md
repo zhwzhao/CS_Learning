@@ -7,5 +7,5 @@
 * 工具
   * [awk教程](/cs_note/awk使用.md)
   * [Git教程](/cs_note/Git教程.md)
-  * [Linux 快捷键](/cs_note/Linux 快捷键.md)
+  * [Linux快捷键](/cs_note/Linux快捷键.md)
 
