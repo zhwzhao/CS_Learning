@@ -52,7 +52,7 @@ Git本地有三个工作区域：工作目录（Working Directory）、暂存区
 因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed) 
 
 ![图片](imgs/git2.jpg)
-
+=======
 
 
 # Git项目搭建
@@ -63,7 +63,7 @@ Git本地有三个工作区域：工作目录（Working Directory）、暂存区
 
 日常使用只要记住下图6个命令：
 
-![图片](git3.png)
+![图片](imgs/git3.png)
 
 ## 本地仓库搭建
 
@@ -89,9 +89,7 @@ git clone [url]   # https://gitee.com/kuangstudy/openclass.git
 
 # Git文件操作
 
-## 文件的四
-
-## 种状态
+## 文件的四种状态
 
 版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没提交上。
 
