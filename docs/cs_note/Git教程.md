@@ -87,9 +87,7 @@ git init
 git clone [url]   # https://gitee.com/kuangstudy/openclass.git
 ```
 
-# Git文件操作
-
-## 文件的四种状态
+# Git文件操作文件的四种状态
 
 版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没提交上。
 
