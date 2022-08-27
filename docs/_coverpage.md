@@ -6,5 +6,5 @@
 
 C++，计算机网络，操作系统，数据库、算法等
 
-[GitHub](https://github.com/zhwzhao/cs_interview.git)
+[CSDN](https://blog.csdn.net/qq_32159463?type=blog)
 [Get Started](#README)
