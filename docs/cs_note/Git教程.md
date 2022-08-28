@@ -30,7 +30,7 @@ git config --global user.email 24736743@qq.com   #邮箱
 
 Git本地有三个工作区域：工作目录（Working Directory）、暂存区(Stage/Index)、资源库(Repository或Git Directory)。如果在加上远程的git仓库(Remote Directory)就可以分为四个工作区域。文件在这四个区域之间的转换关系如下
 
-![](imgs/git1.png)
+![](../imgs/git1.png)
 
 - Workspace：工作区，存放项目代码的地方
 - Index / Stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息
@@ -51,7 +51,7 @@ Git本地有三个工作区域：工作目录（Working Directory）、暂存区
 
 因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed) 
 
-![图片](imgs/git2.jpg)
+![图片](../imgs/git2.jpg)
 =======
 
 
@@ -63,7 +63,7 @@ Git本地有三个工作区域：工作目录（Working Directory）、暂存区
 
 日常使用只要记住下图6个命令：
 
-![图片](imgs/git3.png)
+![图片](../imgs/git3.png)
 
 ## 本地仓库搭建
 
