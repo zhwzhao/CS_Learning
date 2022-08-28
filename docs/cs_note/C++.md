@@ -1,10 +1,6 @@
 ### 内存分配：
 
-[brk mmap](https://blog.csdn.net/shuzishij/article/details/86574927)				
-
- 					
-
- 						 						 						 						 					
+[brk mmap](https://blog.csdn.net/shuzishij/article/details/86574927)								 						 						 						 					
 
 **在执行malloc申请内存的时候，操作系统是怎么做的?** 
 
@@ -51,7 +47,7 @@ malloc是用户态使用的内存分配接口，一般通过mmap实现。但是�
 1. 第一个数据成员放在offset为0的地方，以后每个数据成员的对齐都要按照#pragma pack(n)指定的数值和这个结构体中的最大数据长度，比较小的进行。
 2. 在数据成员对齐后，类或结构体自己本身也要进行对齐。
 
-\#pragma pack(n)作为一个预编译指令用来设置多少个字节对齐的。n的缺省数值是按照编译器自身设置，一般为8，合法的数值分别是1、2、4、8、16。
+`#pragma pack(n)`作为一个预编译指令用来设置多少个字节对齐的。n的缺省数值是按照编译器自身设置，一般为8，合法的数值分别是1、2、4、8、16。
 
 
 
@@ -153,37 +149,6 @@ Father* ff = dynamic_cast<Father*>(s3); //没有必要，直接ff = s3即可。
 
 new所申请的内存区域在C++中称为自由存储区。是由堆实现的自由存储，可以说new所申请的内存区域在堆上。
 
-**new delete**
-
-```
-1. 回调函数
-bool func(int a, int b){
-	return a > b;
-}
-
-vector<int> arr={3,2,4,5,6,5,9,10};
-sort(arr.begin(), arr.end(), func);
-
-2. 仿函数:仿函数不是一个函数，而是由类或结构体重载()操作符而实现的类似函数的行为，就是一个仿函数类。
-struct cmp{
-	bool operator()(const int a, const int b){
-    	return a>b;
-    }
-};
-
-sort(arr.begin(), arr.end(), cmp());
-
-3. lambda表达式：
-[capture list] (params list) mutable exception-> return type { function body }
-主要由捕捉列表、形参列表、表明是否可以修改捕获的变量、返回类型、函数体；表达式的格式不是固定不变的
-=表示以值的形式捕捉外部变量
-&表示以引用形式捕捉外部变量
-
-sort(arr.begin(), arr.end(), [](int a, int b){
-	return a > b;
-});
-```
-
 
 
 ### 回调函数、仿函数、lambda函数
@@ -223,11 +188,11 @@ sort(arr.begin(), arr.end(), [](int a, int b){
 
 ### strcpy、memcpy
 
-strcpy用于字符串的拷贝，而memcpy可以用于任意数据的拷贝
+`strcpy`用于字符串的拷贝，而`memcpy`可以用于任意数据的拷贝
 
-strcpy拷贝时遇到'\0'停止，而memcpy指定拷贝的字节数，要考虑是否覆盖的问题
+`strcpy`拷贝时遇到`\0`停止，而memcpy指定拷贝的字节数，要考虑是否覆盖的问题
 
-```
+```c++
 char* strcpy1(char* dst, const char* source){
     char *res;
     if(dst==nullptr && source==nullptr) return nullptr;
@@ -257,10 +222,6 @@ void* mymemcpy(void *dst, const void *src, int n){
     return dst;
 }
 ```
-
-
-
-
 
 
 
@@ -374,7 +335,7 @@ string 类型对象还包括一个 reserve() 函数。调用该函数可以为 s
 
 ##### C++ string字符串比较方法详解
 
- Basic_string 类模板既提供了 >、<、==、>=、<=、!= 等比较运算符，还提供了 compare() 函数，其中 compare() 函数支持多参数处理，支持用索引值和长度定位子串进行比较。该函数返回一个整数来表示比较结果。如果相比较的两个子串相同，compare() 函数返回 0，否则返回非零值。 
+ `Basic_string` 类模板既提供了 >、<、==、>=、<=、!= 等比较运算符，还提供了 `compare()` 函数，其中 `compare()` 函数支持多参数处理，支持用索引值和长度定位子串进行比较。该函数返回一个整数来表示比较结果。如果相比较的两个子串相同，`compare()` 函数返回 0，否则返回非零值。 
 
 ###### compare()函数
 
@@ -394,7 +355,7 @@ int compare (size_type pos, size_type n, const Ch* p, size_type = npos) const;
 s.compare {pos,n, s2);
 ```
 
-若参与比较的两个串值相同，则函数返回 0；若字符串 S 按字典顺序要先于 S2，则返回负值；反之，则返回正值。下面举例说明如何使用 string 类的 compare() 函数。
+若参与比较的两个串值相同，则函数返回 0；若字符串 S 按字典顺序要先于 S2，则返回负值；反之，则返回正值。下面举例说明如何使用 string 类的 `compare()` 函数。
 
 ##### string字符串修改和替换方法
 
@@ -412,9 +373,8 @@ s.compare {pos,n, s2);
 erase() 函数的原型为：
 erase() 函数的使用方法为：
 
- iterator erase (iterator first, iterator last);
-iterator erase (iterator it);
-basic_string& erase (size_type p0 = 0, size_type n = npos); 
+``iterator erase (iterator first, iterator last);`
+`iterator erase (iterator it);`
+`basic_string& erase (size_type p0 = 0, size_type n = npos);`
 
-str.erase (str* begin(), str.end());
-或 str.erase (3);
+`str.erase (str* begin(), str.end());`或 `str.erase (3);`
