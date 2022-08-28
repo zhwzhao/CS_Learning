@@ -342,7 +342,7 @@ string 类型对象还包括一个 reserve() 函数。调用该函数可以为 s
 类 basic_string 的成员函数 compare() 的原型如下：
 
 ```c++
- int compare (const basic_string& s) const;
+int compare (const basic_string& s) const;
 int compare (const Ch* p) const;
 int compare (size_type pos, size_type n, const basic_string& s) const;
 int compare (size_type pos, size_type n, const basic_string& s,size_type pos2, size_type n2) const;
