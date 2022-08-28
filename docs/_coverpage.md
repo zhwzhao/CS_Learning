@@ -6,6 +6,5 @@
 
 C++，计算机网络，操作系统，数据库、算法等
 
-[CSDN](https://blog.csdn.net/qq_32159463?type=blog)
-[Get Started](#README)
+[CSDN](https://blog.csdn.net/qq_32159463?type=blog)  [Get Started](#README)
 
