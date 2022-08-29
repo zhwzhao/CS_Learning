@@ -166,5 +166,32 @@ git branch -dr [remote/branch]
 
 
 
+```sh
+# 执行完 git add . ，如何撤回呢？
+
+# 可以参考下面的方法：
+# 文件退出暂存区/缓存区，但是修改保留：-->取消git add
+git reset --mixed
+
+#撤销所有的已经 add 的文件：
+git reset HEAD .
+
+#撤销某个文件或文件夹：
+git reset HEAD  -filename
+
+# commit之后没有提交，想撤销comit保存修改-->取消git commit
+git reset --soft [commit-id]
+```
+
+
+
+| 参数      | 区别                   |
+| --------- | ---------------------- |
+| `--soft`  | 会将改动放在缓存区     |
+| `--mixed` | 不把改动放在缓存区     |
+| `--hard`  | 撤销，但是不会保留修改 |
+
+
+
 > **注：以上内容来自[狂神说](https://mp.weixin.qq.com/s/Bf7uVhGiu47uOELjmC5uXQ)**
 
