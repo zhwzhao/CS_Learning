@@ -5,7 +5,12 @@
 * [数据结构与算法](/cs_note/算法.md)
 * [HTTP](/cs_note/http.md)
 * 工具
+
   * [awk教程](/cs_note/awk使用.md)
   * [Git教程](/cs_note/Git教程.md)
   * [Linux快捷键](/cs_note/Linux快捷键.md)
 
+  
+
+- 其它
+  - [微信推送](/cs_note/微信推送.md)
