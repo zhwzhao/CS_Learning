@@ -10,7 +10,7 @@
   * [Git教程](/cs_note/Git教程.md)
   * [Linux快捷键](/cs_note/Linux快捷键.md)
 
-* [LShell学习](/cs_note/shell脚本.md)
+* [Shell学习](/cs_note/shell脚本.md)
 
 - 其它
   - [微信推送](/cs_note/微信推送.md)
