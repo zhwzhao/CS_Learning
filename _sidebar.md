@@ -13,3 +13,5 @@
 * [Shell学习](/cs_note/shell脚本.md)
 - 其它
   - [微信推送](/cs_note/微信推送.md)
+  - [BigTable](/cs_note/BigTable学习.md)
+
