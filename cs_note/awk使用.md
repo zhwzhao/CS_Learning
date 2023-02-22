@@ -115,4 +115,27 @@
     ```
 
     
+输出两个文件有diff的行
+
+```shell
+awk '{ 
+        if(ARGIND==1) {val[$0]} 
+        else if($0 in val) {delete val[$0]} 
+        else {val1[$0]}
+    }  
+    END{
+        print "only in "ARGV[1]; 
+        for(i in val) print i; 
+        print "\n----------\nonly in "ARGV[2]; 
+        for(i in val1) print i
+    }' a.txt b.txt
+```
+
+
+
+统计某一列的和
+
+```shell
+awk 'BEGIN{sum=0}{sum+=$1}END{print sum}' data.txt
+```
 
